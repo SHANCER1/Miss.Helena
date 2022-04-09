@@ -4,7 +4,7 @@ RUN git clone https://github.com/Luciferking1/Miss.Helena /root/WhatsAsenaDuplic
 WORKDIR /root/WhatsAsenaDuplicated/
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
-RUN yarn install --no-audit
+RUN yarn install --ignore-engines
 RUN git clone https://github.com/RAFI-SER/Media
 
 CMD ["node", "bot.js"]
