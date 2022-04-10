@@ -10,7 +10,7 @@ const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./whatsasena/');
+const {Message, StringSession, Image, Video} = require('./Helena/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
 const axios = require('axios');
@@ -139,7 +139,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('😈 COSMIC BOT IS  working!')
+            chalk.green.bold('♥️HELENA BOT IS  working!♥️')
         );
         await new Promise(r => setTimeout(r, 1100));
 
@@ -164,7 +164,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     })
                 }
                 else {
-                    await conn.sendMessage(conn.user.jid, '🤖🄲🄾🅂🄼🄸🄲 🄱🄾🅃 🅂🅃🄰🅁🅃🄴🄳🤖', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '🤖🄷🄴🄻🄴🄽🄰 🄱🄾🅃 🅂🅃🄰🅁🅃🄴🄳🤖', MessageType.text);
                 }
             }
             else {
@@ -186,7 +186,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     })
                 }
                 else {
-                    await conn.sendMessage(conn.user.jid, '🤖🄲🄾🅂🄼🄸🄲 🄱🄾🅃 🅂🅃🄰🅁🅃🄴🄳🤖', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '🤖🄷🄴🄻🄴🄽🄰 🄱🄾🅃 🅂🅃🄰🅁🅃🄴🄳🤖', MessageType.text);
                 }
 
             }
@@ -235,7 +235,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                 }
                 else {
 
-                    await conn.sendMessage(conn.user.jid, '🤖🄲🄾🅂🄼🄸🄲 🄱🄾🅃 🅂🅃🄰🅁🅃🄴🄳🤖', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '🤖🄷🄴🄻🄴🄽🄰 🄱🄾🅃 🅂🅃🄰🅁🅃🄴🄳🤖', MessageType.text);
                 }
             }
         }
@@ -383,8 +383,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ *🄲🄾🅂🄼🄸🄲 🄱🄾🅃 🄴🅁🅁🄾🅁 🄵🄾🅄🄽🄳!* ~______~*' +
-                                    '\n\n*🧞‍♂️ ' + error + '*\n\n```Max Error oyvakkan join cheyyu  https://chat.whatsapp.com/KeEMhqBW644IN46PYsGDWf``` ' 
+                                await conn.sendMessage(conn.user.jid, '*~_________~ *🄷🄴🄻🄴🄽🄰 🄱🄾🅃 🄴🅁🅁🄾🅁 🄵🄾🅄🄽🄳!* ~______~*' +
+                                    '\n\n*🧞‍♂️ ' + error + '*\n\n```Error oyvakkan join cheyyu  https://chat.whatsapp.com/FJZ00oZignw25kjLELXWKu``` ' 
                                     , MessageType.text);
                             }
                         }
