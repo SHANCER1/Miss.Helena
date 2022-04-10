@@ -52,15 +52,15 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
         if (!!message.mention && message.mention[0] == '919605741366@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/rafimention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/rafimention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.MENTION) {
-await message.client.sendMessage(message.jid, fs.readFileSync('uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('/Media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == '917994909899@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/nnn.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('./Media/uploads/nnn.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
-const array = ['Bot','Love','Bye','bye']
+const array = ['porn','pottum','pova','povoola','powli','pro','radio','ramees','re entry','recharge','remove','rip','romantic','ronaldo','saji','samshayam','sarasu','sathyam','save','scene','sed','sex','share','sheri','sherikkum','show','sing','single','smoker','smooth','song','sorry',spam','sry','status','stop','subscribe','sugamalle','super','tagall','tea','tha','thaa','thank u','thanks','tharuo','thayoli','thech','theram','thug','thund','tnx','tone','top up','umma','urang','vayya','vedi','vere bot','veruppikkalla','wait','welcome','wow','xxxtentacion','yes','yodhav','3g','Aah','Aara','Acting','Ajmal','Aju','Aliya','Aliyo','Aliyo','Amee','Ameen','Ano','Anoo','Appan','Ara','Ariyo','Atheppo','Ayin','Ayn','Baby','Barca','Bgm','Birthday','Blind psycho','Boss','Bot Remove','Bot','Break Up','Break up','Bro','Business','Bye','CR7','Chaya','Chill','Chiri','Chunk','Class','Cr7','Cruz','Cruze','Da','Dance','Delete','Dora','Dream','Edit','Entha Cheyya','Eppadi','Eppol','Error','Ethi','FF','Free Fire','Good Night','Hai','Hambada','Happy','Hate','Hi','Hloo','How','Hy','I Love You','I love you','I love you','Love You','Love you','Love','Lub','Manassilayilla','Mandan','Mazha','Messi','Mihal','Mikhalel','Mindanda','Mindula','Miss you','Miss u','Mood','Mooji','Moonji','Morning','Mullassery','Music','Mule','Mulhe.','Muthee','Mwol','NEW','Nanban','Naye','Nee Poda','Neymar','Nirth','Njan Vannu','Noob','Ntha Ingane','Offer','Online','Oorma','Oru pattu pad','Paisa','Pediya','Poda','Podi','Pokki Para','Poli','Pom','Pottan']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
